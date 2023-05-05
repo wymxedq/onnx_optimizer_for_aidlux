@@ -16,22 +16,10 @@ You may be interested in invoking the provided passes, or in implementing new on
 
 ## Installation
 
-You can install onnxoptimizer from PyPI:
+Build for aidlux:
 
 ```bash
-pip3 install onnxoptimizer
-```
-
-Note that you may need to upgrade your pip first if you have trouble:
-
-```bash
-pip3 install -U pip
-```
-
-If you want to build from source:
-
-```bash
-git clone --recursive https://github.com/onnx/optimizer onnxoptimizer
+git clone --recursive https://github.com/wymxedq/onnx_optimizer_for_aidlux onnxoptimizer
 cd onnxoptimizer
 pip3 install -e .
 ```

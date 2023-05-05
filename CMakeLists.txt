@@ -48,7 +48,7 @@ target_include_directories(onnx_optimizer PUBLIC
     )
 
 onnxopt_add_executable(onnx_optimizer_exec examples/onnx_optimizer_exec.cpp)
-target_link_libraries(onnx_optimizer_exec onnx_optimizer)
+target_link_libraries(onnx_optimizer_exec onnx_optimizer stdc++fs)
 
 
 file(GLOB onnx_opt_c_api_srcs "onnxoptimizer/c_api/*.cc"

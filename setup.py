@@ -258,6 +258,9 @@ class build_ext(setuptools.command.build_ext.build_ext):
                     lib_path = debug_lib_dir
                 elif os.path.exists(release_lib_dir):
                     lib_path = release_lib_dir
+
+            os.makedirs(os.path.realpath(self.build_lib)+"/onnxoptimizer", exist_ok=True)
+
             src = os.path.join(lib_path, filename)
             dst = os.path.join(os.path.realpath(
                 self.build_lib), "onnxoptimizer", filename)
